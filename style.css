@@ -2,15 +2,16 @@
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-
 }
-.banner{
-    width: 100%;
+
+html{
     height: 100%;
     background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url(backgroung.jpg);
-    background-size: cover;
     background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
+
 .navbar{
     width: 85%;
     margin: auto;
@@ -18,7 +19,9 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
 }
+
 .Logo{
     width: 100px;
     cursor: pointer;
@@ -56,7 +59,7 @@
     top: 50%;
     transform: translateY(-50%);
     text-align: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .content h1{
@@ -66,8 +69,64 @@
 .content p{
     margin: 20px auto;
     font-weight: 100;
-    line-height: 25px;
+    line-height: 25px; 
 }
+.shop{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+    margin-top: 95%;
+    color: white;
+}
+.shop h1{
+    font-size: 70px;
+}
+.shop h2{
+    font-size: 40px;
+    text-decoration: underline;
+}
+.shop p{   
+    margin: 20px auto;
+    font-weight: 100;
+    line-height: 25px; }
+
+.shop a{
+    display: inline-block;
+    padding: 5px 5px;
+    background-color:transparent;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    border: 2px solid black;
+    transition: background-color 0.3s ease;
+
+}
+.shop a:hover{
+    color: rgb(0, 0, 0);
+    background-color:rgba(199, 199, 213, 0.481);
+    
+}
+
+.product {
+    display: inline-block;
+    margin: 20px; /* Optional: Füge etwas Abstand zwischen den Produkten hinzu */
+    margin-top: 50px;
+    background-color: transparent;
+}
+
+.product img {
+    width: 200px; /* Passe die Breite der Bilder nach Bedarf an */
+    height: auto;
+}
+
+.product p {
+    margin: 5px 0 0; /* Optional: Füge etwas Abstand zwischen dem Bild und dem Link hinzu */
+    color: rgb(255, 255, 255);
+}
+
+  
 button{
     width: 200px;
     padding: 15px 0;
@@ -100,5 +159,3 @@ button:hover span{
 button:hover{
     border: none;
 }
-
-
